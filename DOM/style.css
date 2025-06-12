@@ -1,0 +1,46 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+  }
+  h1{
+    font-size: 50px;
+    color: white;
+  }
+  h2{
+    font-size: 50px;
+    color: yellow;
+  }
+
+  h3{
+    font-size: 90px;
+    color: wheat;
+  }
+.btn{
+    height: 40px;
+    width: 100px;
+    font-size: larger;
+    border-radius: 20px;
+    color:red;
+    background-color: yellow;
+  }
+
+  .bulb{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  .btn1{
+    height: 40px;
+    width: 100px;
+    font-size: larger;
+    border-radius: 20px;
+    color:red;
+    background-color: black;
+  }
