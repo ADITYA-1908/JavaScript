@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete DOM Example</title>
+    <style>
+        #container {
+            padding: 20px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DOM Example</h1>
+
+    <div id="container">This is a container</div>
+
+    <button id="clickBtn">Click Me</button>
+    <button id="dblClickBtn">Double Click Me</button>
+    <button id="addBtn">Add Element</button>
+    <button id="removeBtn">Remove Last Element</button>
+
+    <input type="text" id="inputField" placeholder="Type something...">
+    <form id="myForm">
+        <input type="text" id="formInput" placeholder="Form Input">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="elementsContainer"></div>
+
+    <script src="dom.js" defer></script>
+</body>
+
+</html>
