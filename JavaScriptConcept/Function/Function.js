@@ -11,59 +11,63 @@
 // console.log(subtract(5, 2));
 
 //! Arrow Function
-// const multiply = (a, b) => a * b;
-// console.log(multiply(3, 4));
+// const multiply = ((a, b) => {
+//     return a * b;
+// })
+// console.log(multiply(2, 3))
 
 //! IIFE (Immediately Invoked Function Expression)
-// (function (a, b) {
-//     console.log(a / b);
-// })(8, 2);
-
+// (function add(a, b) {
+//     console.log(a + b)
+// }
+// )(2, 4)
 //! Function Constructor
 // const divide = new Function("a", "b", "return a / b;");
 // console.log(divide(10, 2));
 
 
 // //! Recursive Function
-// function factorial(n) {
-//     if (n === 0 || n === 1) {
-//         return 1;
+// function fact(n){
+//     if (n ===1 || n==0) {
+//         return 1
 //     }
-//     return n * factorial(n - 1);
+//     return n*fact(n-1)
 // }
-// console.log(factorial(5));
+// console.log(fact(3))
 
 // //! Callback Function
-// function greet(name, callback) {
-//     console.log("Hello " + name);
-//     callback();
+// function parent(name, callBack) {
+//     console.log("name is " + name)
+//     callBack()
+// }
+// function Callback() {
+//     console.log("callBack function")
 // }
 
-// function callMe() {
-//     console.log("I am callback function");
-// }
-// greet("Aditya", callMe);
+// parent("JavaScript", Callback)
 
 // //! Higher-Order Function
-// function operate(a, b, operation) {
-//     return operation(a, b);
+// function operater(a, b, opeartion) {
+//     return opeartion(a, b)
 // }
-// function add(x, y) {
-//     return x + y;
+
+// function add(a, b) {
+//     console.log(a + b)
 // }
-// function subtract(x, y) {
-//     return x - y;
+
+// function sub(a, b) {
+//     console.log(a - b)
 // }
-// console.log(operate(5, 3, add));
-// console.log(operate(5, 3, subtract));
+// operater(4, 2, add)
+// operater(4, 2, sub)
 
 
 // //! Function with Default Parameters
-// function power(base, exponent = 2) {
-//     return Math.pow(base, exponent);
+// function pow(a, b = 2) {
+//     return Math.pow(a, b)
 // }
-// console.log(power(3)); // 3^2
-// console.log(power(2, 3)); // 2^3
+// console.log(pow(2))
+// console.log(pow(2, 3))
 
 // //! Function Returning Function
 // function outerFunction(outerVariable) {
@@ -80,7 +84,7 @@
 // function outer() {
 //     let name = "Jspider"
 //     function inner() {
-//         return { name };
+//         return name;
 //     }
 //     return inner
 // }
