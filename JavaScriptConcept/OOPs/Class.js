@@ -1,10 +1,9 @@
 class Car {
-    //constructure 
+    //Constructor
     constructor(brand, color) {
         this.brand = brand
         this.color = color
     }
-
     //methods
     info() {
         console.log(this.brand + " and " + this.color)

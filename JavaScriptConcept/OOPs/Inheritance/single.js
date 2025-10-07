@@ -1,27 +1,24 @@
+// Parent Class
 class Animal {
+    //Constructor
     constructor(name) {
         this.name = name;
     }
 
-    speak() {
-        console.log(`${this.name} makes sound`);
+    eat() {
+        console.log(`${this.name} is eating`);
     }
+
 }
 
+// Child Class inherits from Animal
 class Dog extends Animal {
-    constructor(name, breed, gender) {
-        super(name);
-        this.breed = breed;
-        this.gender = gender;
-    }
-
-    speak() {
-        console.log(`${this.name} is a ${this.breed} and gender is ${this.gender}`);
+    bark() {
+        console.log(`${this.name} is barking`);
     }
 }
 
-const animal = new Animal("Generic Animal");
-animal.speak();
-
-const dog = new Dog("Tommy", "German Shepherd", "Male");
-dog.speak(); 
+// instance
+const dog1 = new Dog("Tommy");
+dog1.eat();
+dog1.bark();
