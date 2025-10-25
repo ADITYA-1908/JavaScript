@@ -9,7 +9,7 @@
 // console.log("no of alphabet= " + str.split("").length);
 
 //!--------------------Array InBuilt methods--------------------------------
-// const arr = [1, 2,3,4,5];
+const arr = [1, 2, 3, 4, 5];
 // console.log(arr);
 // arr.push(6);
 // console.log("push the value at last index ");
@@ -17,7 +17,7 @@
 // arr.push(6, 12);
 // console.log("push multiple value at last index ");
 // console.log(arr);
-// arr.shift(6);
+// arr.shift();
 // console.log("shift will remove the value at first index ");
 // console.log(arr);
 // arr.unshift(0);
@@ -70,8 +70,8 @@
 // const arr2 = arr.filter((value) => value % 2 === 0);
 // console.log(arr2);
 
-//!reduce
-const arr = [1, 2, 3, 4, 5];
-const sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-console.log(sum);
+// //!reduce
+// const arr = [1, 2, 3, 4, 5];
+// const sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log(sum);
 

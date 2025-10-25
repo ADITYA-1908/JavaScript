@@ -1,25 +1,22 @@
 // Parent class
 class Animal {
-    makeSound() {
-        console.log("Some generic animal sound");
+    eat() {
+        console.log("Animal is eating...");
     }
 }
 
-// Child class 1
+// Child class
 class Dog extends Animal {
-    makeSound() {
-        console.log("Dog barks 🐶");
+    // Overriding the eat() method
+    eat() {
+        // Call the parent class method using super
+        super.eat();
+        console.log("Dog is eating bones...");
     }
 }
 
-// Child class 2
-class Cat extends Animal {
-    makeSound() {
-        console.log("Cat meows 🐱");
-    }
-}
+// Create object
+const dog1 = new Dog();
 
-// Using polymorphism
-const animals = [new Dog(), new Cat(), new Animal()];
-
-animals.forEach((a) => a.makeSound());
+// Call method
+dog1.eat();

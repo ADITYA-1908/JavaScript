@@ -13,3 +13,6 @@ class Car {
 // Instance
 const myCar = new Car("BMW", "red");
 myCar.info();
+
+
+

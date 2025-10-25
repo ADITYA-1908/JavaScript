@@ -23,5 +23,5 @@ console.log(p1.age);       // ✅ Accessible (public)
 console.log(p1.getName()); // ✅ Accessed through getter
 // console.log(p1.#name);  ❌ Error: private field
 
-p1.setName("Basantia");
+p1.setName("subham");
 console.log(p1.getName()); // Output: Basantia
